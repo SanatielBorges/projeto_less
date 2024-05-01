@@ -1,0 +1,97 @@
+@import 'variaveis.less';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ========================================================== */
+header {
+    display: flex;
+    justify-content: center;
+    background-color: @cor-primaria;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1024px;
+    padding: 10px;
+}
+
+.branding img {
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    list-style: none;
+    margin-left: 15px;
+    margin-top: 35px;
+    font-size: 12px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu li a:hover {
+    color: @cor-hover;
+    text-decoration: underline;
+    transition: all ease 0.3s;
+}
+
+/* ========================================================== */
+
+section .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: @cor-secundaria;
+    padding: 10px;
+    height: calc(100vh - 104px);
+}
+
+.@{prefixo-produto}cab {
+    color: #fff;
+    font-size: 20px;
+}
+
+.products {
+    display: flex;
+    padding-top: 25px;
+    text-align: center;
+    list-style: none;
+}
+
+.products p {
+    margin-bottom: 20px;
+}
+.product-button {
+    border-radius: 8px;
+    padding:5px 47px;
+    background-color: @cor-terciaria;
+    color: #fff;
+    text-decoration: none;
+}
+
+.product-button:hover {
+    background-color: #30971b;
+    transition: all ease 0.3s;
+}
